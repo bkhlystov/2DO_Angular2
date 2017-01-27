@@ -9,23 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 /**
- * Created by User on 26.01.2017.
+ * Created by User on 27.01.2017.
  */
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'Angular 2Do';
+var TodoFormComponent = (function () {
+    function TodoFormComponent() {
+        this.newTodoTitle = '';
     }
-    AppComponent = __decorate([
+    TodoFormComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'app',
-            templateUrl: 'app.components.html',
-            styleUrls: ['app.components.css']
+            selector: 'todo-form',
+            templateUrl: 'todo-form-components.html',
+            styleUrls: ['todo-form-components.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], TodoFormComponent);
+    return TodoFormComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.TodoFormComponent = TodoFormComponent;
+//# sourceMappingURL=todo-form-components.js.map

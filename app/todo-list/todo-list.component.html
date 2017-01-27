@@ -1,0 +1,13 @@
+<div class="todo-list" *ngIf="todos.length">
+    <div class="todo-item" *ngFor="let todo of todos" [ngClass]="{ 'completed': todo.completed }" [todo]="todo">
+        <button class="checkbox icon" (click)="toggle(todo)">   <!-- Передаем любое слово в параметре через него идет привязка именно к этому обьекту-->
+            <i class="material-icons"> {{ todo.completed ? 'check_box' :  'check_box_outline_blank' }}  </i>
+        </button>
+        <span class="title">{{todo.title}}</span>
+        <div class="actions">
+            <button class="delete icons" (click)="delete(todo)">
+                <i class="material-icons">delete</i>
+            </button>
+        </div>
+    </div>
+</div>
