@@ -8,7 +8,7 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 
 @NgModule({
 	imports: [BrowserModule, FormsModule],
-	declarations: [AppComponent, TodoFormComponent, TodoListComponent, TodoListComponent],
+	declarations: [AppComponent, TodoFormComponent, TodoListComponent],
 	bootstrap: [AppComponent]
 })
 

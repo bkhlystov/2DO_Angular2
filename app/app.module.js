@@ -20,7 +20,7 @@ var AppModule = (function () {
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-            declarations: [app_component_1.AppComponent, todo_form_components_1.TodoFormComponent, todo_list_component_1.TodoListComponent, todo_list_component_1.TodoListComponent],
+            declarations: [app_component_1.AppComponent, todo_form_components_1.TodoFormComponent, todo_list_component_1.TodoListComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

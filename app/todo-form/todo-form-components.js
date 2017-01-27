@@ -12,10 +12,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by User on 27.01.2017.
  */
 var core_1 = require('@angular/core');
+var todo_1 = require('../share/todo');
+var data_1 = require('../share/data');
 var TodoFormComponent = (function () {
     function TodoFormComponent() {
         this.newTodoTitle = '';
     }
+    TodoFormComponent.prototype.create = function () {
+        //event.preventDefault();   //станавливает отправку данных на сервер и перезагрузку страницы
+        //let todo: Todo = new Todo(input.value, false);
+        //this.todos.push(todo);
+        //input.value = '';
+        var todo = new todo_1.Todo(this.newTodoTitle, false);
+        data_1.todos.push(todo);
+        // this.newTodoTitle = '';
+        // console.log(todo);
+        // console.log(todos);
+    };
     TodoFormComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
